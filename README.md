@@ -61,6 +61,19 @@ else:
 
 #### Check pipeline i Airflow
 
+Load siden <localhost:8080>
+
+##### __Username/pw__
+
+User
+: admin
+
+PW
+: Se Terminal vinduet, så _Airflow_ er startet
+![](docs/intro/user_pw.png)
+
+Eller i filen `airflow/standalone_admin_password.txt`.
+
 ### Kom videre
 
 Se eksemplet i `dags/simple_demo`.
