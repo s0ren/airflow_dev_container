@@ -18,6 +18,14 @@ pip install "apache-airflow==${AIRFLOW_VERSION}" --constraint "${CONSTRAINT_URL}
 
 ln -s ~/airflow airflow
 
+# cd ~/airflow/
+# ln -s /workspaces/airflow_dev_container/dags dags
+# cd /workspaces/airflow_dev_container/
+
+ln -s /workspaces/airflow_dev_container/dags ~/airflow/dags
+ln -s /workspaces/airflow_dev_container/data ~/airflow/data
+ln -s /workspaces/airflow_dev_container/logs ~/airflow/logs
+
 echo "Login with username: admin  password: " $(cat airflow/standalone_admin_password.txt)
 
 # The Standalone command will initialise the database, make a user,

@@ -43,6 +43,11 @@ Nederst i venstre hjørne finder du en knap der ligner noget _`><`_, når klikke
 
 Vælg _`Reopen in Container`_.
 
+#### Genstart
+
+I _Terminal_-viduet kan du afbryde _Airflow_ med `CTRL-C`.
+
+Genstart med kommandoen `airflow standalone´
 
 #### Kør dit script direkte i python
 
