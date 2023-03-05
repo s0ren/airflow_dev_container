@@ -16,15 +16,33 @@ CONSTRAINT_URL="https://raw.githubusercontent.com/apache/airflow/constraints-${A
 # For example: https://raw.githubusercontent.com/apache/airflow/constraints-2.5.1/constraints-3.7.txt
 pip install "apache-airflow==${AIRFLOW_VERSION}" --constraint "${CONSTRAINT_URL}"
 
-ln -s ~/airflow airflow
 
-# cd ~/airflow/
+
+echo "********************"
+echo "* some system set up, like symlinks"
+
+# set -x
+
+# ln -s ~/airflow airflow
+
+# cd airflow
+
 # ln -s /workspaces/airflow_dev_container/dags dags
 # cd /workspaces/airflow_dev_container/
 
-ln -s /workspaces/airflow_dev_container/dags ~/airflow/dags
-ln -s /workspaces/airflow_dev_container/data ~/airflow/data
-ln -s /workspaces/airflow_dev_container/logs ~/airflow/logs
+# ln -s ~/airflow/data data
+# ln -s ~/airflow/logs logs
+
+# echo $(pwd)
+
+# ln -s /workspaces/airflow_dev_container/dags ~/airflow/dags
+# ln -s /workspaces/airflow_dev_container/data ~/airflow/data
+# ln -s /workspaces/airflow_dev_container/dags ~/airflow/dags
+# ln -s /workspaces/airflow_dev_container/data ~/airflow/data
+
+#ln -s /workspaces/airflow_dev_container/logs ~/airflow/logs
+
+# set +x
 
 echo "Login with username: admin  password: " $(cat airflow/standalone_admin_password.txt)
 
